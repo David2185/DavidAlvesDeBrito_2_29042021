@@ -4,30 +4,59 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="Fichier.css">
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/91fd56deac.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-        <header>
-            <img src="images/logo/Reservia@3x.png" alt="Logo reservia"/>
+    <header>
+        <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo reservia"/>
             <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+                <nav>
+                    <a href="#hébergement" class="Hôtels">Hébergements</a>
+                    <a href="#Activités" class="Hôtels">Activités</a>
+                    <a href="#Mon compte" class="Mon compte">S'inscrire</a>
+                 </nav>
+     </header>
                 <div>
-                <a href="#hébergement">Hébergements</a>
-                <a href="#Activités">Activités</a>
-                <a href="#S'inscrire">S'inscrire</a>
-                </div>
-                
-                <div>
-                    <form method="post" action="Traitement.php">
-                        <p>
-                            <label>En plein centre ville ou en pleine nature</label><br/>
-                            <input type="texte" name="Saisissez votre recherche" id="Recherche"/>
-                            <button>Rechercher</button>
-                        </p>
-                    
+                    <p>
+                        <form method="post" action="Traitement.php">
 
+                            <label>En plein centre ville ou en pleine nature</label><br/>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="texte" name="Saisissez votre recherche" id="Rechercher" value="Marseille, France"/>
+                            <button>Rechercher</button>
+
+                        </form>
+                    </p>
+                </div>                
+                <div>
+                        <div class="filtres">
+                            <span class="Filtre économique">
+                                <label>Filtres</label>
+                                <i class="fas fa-money-bill-wave-alt"></i>  
+                                <a href="#Économique" class="Filtres">Économique</a>
+                            </span>
+                            <span class="Filtre familial">
+                                <i class="fas fa-child"></i>
+                                <a href="#Familial"class="Filtres">Familial</a>
+                            </span>
+                            <span class="Filtre romantique">
+                                <i class="fas fa-heart"></i>
+                                <a href="#Romantique" class="filtres">Romantique</a>
+                            </span>
+                            <span class="Filtre animaux autorisés">
+                                <i class="fas fa-dog"></i>
+                                <a href="#Animaux autorisés" class="filtres">Animaux autorisés</a>
+                            </span>
+                            
+                        </div>
                 </div>
-            
-        </header>
-    
+                <div>
+                    <p>
+                    <i class="fas fa-info-circle"></i>
+                    Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                    
+                </div>
     </body>
 </html>
