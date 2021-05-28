@@ -6,52 +6,69 @@
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/91fd56deac.js" crossorigin="anonymous"></script>
     </head>
-    
+
     <body>
     <!--header-->
-        <header> 
-            <nav>
-            <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo reservia"/>
-            <ul>
-                <li id="Hébergements"><a href="hébergement" class="Hôtels">Hébergements</a></li>
-                <li><a href="Activités" class="Hôtels">Activités</a></li>
-                <li><a href="Mon compte" class="Mon compte"><strong>S'inscrire</strong></a></li>
-            </ul>
-            </nav>
-        </header>
-            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-            <div>
-            <form method="post" action="Traitement.php">
-                <label>En plein centre ville ou en pleine nature</label><br/>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="texte" name="Saisissez votre recherche" id="Rechercher" value="Marseille, France"/>
-                <button>Rechercher</button>
+    <header> 
+        <nav>
+        <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo reservia"/>
+        <ul>
+            <li id="Menu1"><a href="#hébergement">Hébergements</a></li>
+            <li id="Menu2"><a href="#Activités">Activités</a></li>
+            <li id="Menu3"><a href="#Mon compte"><strong>S'inscrire</strong></a></li>
+        </ul>
+        </nav>
+    </header> 
     <!--fin header-->
-            </form>
-            </div>                                   
-            <div class="filtres">
-                <span class="Filtre économique">
-                <label>Filtres</label>
-                    <i class="fas fa-money-bill-wave-alt"></i>  
-                    <a href="#Économique" class="Filtres">Économique</a>
-                </span>
-                <span class="Filtre familial">
-                    <i class="fas fa-child"></i>
-                    <a href="#Familial"class="Filtres">Familial</a>
-                </span>
-                <span class="Filtre romantique">
-                    <i class="fas fa-heart"></i>
-                    <a href="#Romantique" class="filtres">Romantique</a>
-                </span>
-                <span class="Filtre animaux autorisés">
-                    <i class="fas fa-dog"></i>
-                    <a href="#Animaux autorisés" class="filtres">Animaux autorisés</a>
-                </span>
-            </div>
-            <div>
-                <i class="fas fa-info-circle"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-            
+    <!--main-->
+    <main>
+        <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+        <div>
+        <form method="post" action="Traitement.php">
+            <h2>En plein centre ville ou en pleine nature</h2><br/>
+        <div class="Barre_recherche">    
+            <label></label>
+            <i class="fas fa-map-marker-alt" id="logo_gps"></i>
+            <input type="texte" name="Saisissez votre recherche" id="Rechercher" value="Marseille, France"/>
+            <button class="button">Rechercher</button>
+        </div>
+        </form>
+        </div> 
+
+        <div id="Filtres">
+
+        <label>Filtres</label>    
+        <div class="Filtre1">  
+            <a href="#Économique" class="Filtres">
+            <i id="style_logo" class="fas fa-money-bill-wave-alt"></i>  
+            <span class="Filtre_économique">Économique</span>
+            </a>
+        </div>  
+        <div class="Filtre2">
+            <a href="#Familial"class="Filtres">
+            <i id="style_logo" class="fas fa-child"></i>
+            <span class="Filtre_familial">Familial</span>
+            </a>
+        </div>
+        
+        <div class="Filtre3">
+            <a href="#Romantique" class="filtres">
+            <i  id="style_logo" class="fas fa-heart"></i>
+            <span class="Filtre_romantique">Romantique</span>
+            </a>
+        </div>
+        <div class="Filtre4">
+            <a href="#Animaux autorisés" class="filtres">
+            <i id="style_logo" class="fas fa-dog"></i>
+            <span class="Filtre_animaux_autorisés">Animaux autorisés</span>
+            </a>
+        </div>
+        </div>
+        <div id="logo_info">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </main>  
+    <!--fin main-->  
     </body>
 </html>
