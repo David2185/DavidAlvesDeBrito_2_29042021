@@ -1,6 +1,7 @@
 body{
     font-size: "raleway", sans-serif;
     margin :20px;
+    margin-left: 20px;
 }
 
 /*header*/
@@ -23,8 +24,108 @@ nav li{
     margin: 0 4rem 0 3rem;
 }
 
-li #Hébergements {
-    border-bottom: 1px;
+#Menu1 {
+    border-top: 1px #0065FC solid;   
+}
+
+#Menu2 {
+    color: grey;
+}
+
+#Menu3 {
+    color: #0065FC;
 }
 
 /*fin header*/
+
+/*main*/
+
+h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+}
+
+h2 {
+    font-size: 15px;
+    opacity: 0.8;
+    font-size: small;
+}
+
+.Barre_recherche {
+
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    width: 270px;
+    height: 30px;
+    margin-bottom: 30px;    ;
+}
+
+#logo_gps {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    margin: 2px;
+    
+}
+.button{
+    background-color: #0065FC;
+    color: white;
+    
+}
+#Filtres {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+.Filtre1 {
+
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    max-width: 130px;
+}
+.Filtre2 {
+
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    max-width: 130px;
+}
+.Filtre3 {
+
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 10px/10px;     
+    max-width: 130px;
+}
+.Filtre4 {
+
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    max-width: 160px;
+}
+
+#logo_info {
+
+    display:flex;
+    align-items: center;
+}
+
+#style_logo {
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
