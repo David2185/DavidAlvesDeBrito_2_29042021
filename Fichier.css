@@ -1,31 +1,32 @@
-body{
-    font-size: "raleway", sans-serif;
-    margin :20px;
-    margin-left: 20px;
+.body{
+    font-family: "raleway", sans-serif;
+    font-size: 16px;
+    margin :20 20 20 20px;
+    background-color: #F2F2F2;
 }
 
 /*header*/
-nav {
+
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+    margin: 2rem;
 }
 
-nav img {
-    height: 50px;
-}
-
-nav li{
-    margin: 0 4rem 0 3rem;
+nav li {
+    margin: 0 3rem 0 2rem;
 }
 
 #Menu1 {
-    border-top: 1px #0065FC solid;   
+    border-top: 2px #0065FC solid; 
+      
 }
 
 #Menu2 {
@@ -34,98 +35,108 @@ nav li{
 
 #Menu3 {
     color: #0065FC;
+    font-weight: bold;
 }
 
 /*fin header*/
 
-/*main*/
+.Titres {
 
-h1 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-
+    font-size: 1rem;
 }
 
-h2 {
-    font-size: 15px;
-    opacity: 0.8;
-    font-size: small;
+#Titre_principal {
+    font-weight: bold;
 }
 
-.Barre_recherche {
+.Formulaire_saisie_ville {
 
-    display: flex;
-    justify-content: flex-start;
+    display: inline-flex;
+    max-width: 100%;
+    max-height: 100%;
+    flex-direction: row;
     border: 1px solid black;
-    border-radius: 10px/10px;
-    width: 270px;
-    height: 30px;
-    margin-bottom: 30px;    ;
+    padding: 0%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    
+
 }
 
-#logo_gps {
-    display: flex;
-    align-items: center;
-    background-color: #F2F2F2;
-    margin: 2px;
+.Logo_gps {
+    color: black;
+    box-sizing: content-box;
+    width: auto;
+    height: auto;
+    border: 5px solid #f2f2f2 ;
+    padding: 5px;
+    align-self: center;
     
+   
 }
-.button{
+
+#Rechercher {
+
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: content-box;
+    width: 9rem;
+    font-size: 1rem;
+    font-family: "Raleway" Arial, sans-serif;
+    font-weight: bold;
+}
+
+.Boutton {
+
     background-color: #0065FC;
     color: white;
-    
+    font-family: "Raleway" Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 1.5rem;
+    border-radius: 0 1rem 1rem 0;
 }
-#Filtres {
+
+.Zone_des_filtres {
 
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Logo_et_filtres {
+
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 2rem;
-}
-.Filtre1 {
-
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid black;
-    border-radius: 10px/10px;
-    max-width: 130px;
-}
-.Filtre2 {
-
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid black;
-    border-radius: 10px/10px;
-    max-width: 130px;
-}
-.Filtre3 {
-
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid black;
-    border-radius: 10px/10px;     
-    max-width: 130px;
-}
-.Filtre4 {
-
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid black;
-    border-radius: 10px/10px;
-    max-width: 160px;
+    margin: 0.3rem;
 }
 
-#logo_info {
+.Logo_des_filtres {
 
-    display:flex;
-    align-items: center;
-}
-
-#style_logo {
-    border: 1px solid black;
-    border-radius: 10px/10px;
     color: #0065FC;
     background-color: #DEEBFF;
+    margin-left: 1rem;
+    border: 1px solid #F2F2F2;  
 }
+
+.Titre_de_la_zone {
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.Résultat_de_recherche {
+
+    display: flex;
+    align-items: center;
+}
+
+.Icône_résultat {
+
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
+
+
