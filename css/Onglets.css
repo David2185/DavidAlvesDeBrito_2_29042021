@@ -1,0 +1,31 @@
+.Onglets>ul {
+
+    display:flex;
+    list-style: none;
+
+}
+
+.Onglets li {
+
+    padding: 2rem;
+}
+
+.Onglets .Actif {
+
+    border-top: 2px solid #0065FC;
+    color:#0065FC;
+}
+
+.Onglets a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.Onglets .Important {
+
+    font-weight: bold;
+    color: #0065FC;
+}
+

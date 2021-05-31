@@ -1,0 +1,10 @@
+.Pictostylisé {
+    display: inline-block;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    width: 1rem;
+    padding: .8rem;
+    margin-right: 1rem;
+    text-align: center;
+}

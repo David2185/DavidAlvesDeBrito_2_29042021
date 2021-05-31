@@ -1,0 +1,21 @@
+.Filtre {
+    display: flex;
+    border: 1px solid #F2F2F2;
+    margin: .8rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.Filtre > *{
+
+    padding: .8rem;
+}
+
+.Filtre > .Picto {
+
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    width: 1.2rem;
+}
