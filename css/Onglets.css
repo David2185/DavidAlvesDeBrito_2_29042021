@@ -1,23 +1,28 @@
 .Onglets>ul {
 
     display:flex;
+    justify-content: flex-end;
     list-style: none;
 
 }
 
 .Onglets li {
 
-    padding: 2rem;
+    display: block;
+    
 }
 
 .Onglets .Actif {
 
     border-top: 2px solid #0065FC;
     color:#0065FC;
+    margin: 0rem 1rem;
+   
 }
 
 .Onglets a {
 
+    padding: 2rem;
     text-decoration: none;
     color: inherit;
 

@@ -1,10 +1,17 @@
 #wrap {
-    font-size: 20px;
-    margin: 0 2rem;
+
+    font-size: 16px;
+    margin: 2rem 2rem;
 }
 
 .Filtres_et_recherche>* {
 
     margin: 1rem 0;
+
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
 
 }

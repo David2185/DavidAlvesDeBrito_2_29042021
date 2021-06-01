@@ -1,3 +1,64 @@
+.Titres {
+
+    font-size: 1rem;
+}
+
+#Titre_principal {
+    font-weight: bold;
+}
+
+.Formulaire_saisie_ville {
+
+    display: inline-flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 0%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    
+
+}
+
+.Formulaire_saisie_ville {
+
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: content-box;
+    width: 9rem;
+    font-size: 1rem;
+    font-family: "Raleway" Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+.Résultat_de_recherche {
+
+    display: flex;
+    align-items: center;
+}
+
+#Rechercher .Logo_gps {
+
+    border: 1px solid #f2f2f2 ;
+    background-color: #F2F2F2;
+    padding: .8rem;
+    align-self: center;    
+}
+
+
+#Rechercher>button{
+
+    background-color: #0065FC;
+    color: white;
+    font-family: "Raleway" Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 1.5rem;
+    border-radius: 0 .8rem .8rem 0;
+}
+
+
 .Filtre {
     display: flex;
     border: 1px solid #F2F2F2;
@@ -18,4 +79,11 @@
     background-color: #DEEBFF;
     border-radius: 100%;
     width: 1.2rem;
+}
+
+.Zone_des_filtres {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
