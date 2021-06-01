@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: row;
 }
-
+/* 
 nav ul{
     display: flex;
     list-style: none;
@@ -36,7 +36,7 @@ nav li {
 #Menu3 {
     color: #0065FC;
     font-weight: bold;
-}
+} */
 
 /*fin header*/
 
@@ -62,11 +62,9 @@ nav li {
 
 }
 
-.Logo_gps {
+#Rechercher .Logo_gps {
     color: black;
     box-sizing: content-box;
-    width: auto;
-    height: auto;
     border: 5px solid #f2f2f2 ;
     padding: 5px;
     align-self: center;
@@ -74,12 +72,12 @@ nav li {
    
 }
 
-#Rechercher {
+.Formulaire_saisie_ville {
 
     border-right: none;
     border-left: none;
     border-top: #F2F2F2 1px solid;
-    border-bottom: #f2f2f2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
     padding: 0 1.5rem;
     box-sizing: content-box;
     width: 9rem;
@@ -88,7 +86,9 @@ nav li {
     font-weight: bold;
 }
 
-.Boutton {
+
+
+#Rechercher>button{
 
     background-color: #0065FC;
     color: white;
@@ -117,7 +117,13 @@ nav li {
     color: #0065FC;
     background-color: #DEEBFF;
     margin-left: 1rem;
-    border: 1px solid #F2F2F2;  
+    border: 1px solid #F2F2F2;
+    border-radius: 3.125rem;  
+}
+
+.Logo_et_filtres {
+
+    border: 1px solid #DEEBFF;
 }
 
 .Titre_de_la_zone {
