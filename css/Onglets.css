@@ -10,21 +10,24 @@
 
     display: block;
     
+    
 }
 
-.Onglets .Actif {
+.Onglets .Actif a{  /*a revoir pour appliquer en dynamique*/
 
-    border-top: 2px solid #0065FC;
+    box-sizing: border-box;
     color:#0065FC;
-    margin: 0rem 1rem;
+    margin: -1rem 1rem;
+    border-top: 2px solid #0065FC;
    
 }
 
 .Onglets a {
 
-    padding: 2rem;
+    padding: 1.9rem;
     text-decoration: none;
     color: inherit;
+    
 
 }
 

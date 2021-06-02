@@ -15,3 +15,14 @@ header{
     justify-content:space-between;
 
 }
+
+.hébergement-à-marseille {
+
+    display: flex;
+    flex-basis: 65%;
+}
+
+.hébergement-à-marseille>* {
+
+    margin: 2rem;
+}

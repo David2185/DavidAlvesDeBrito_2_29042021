@@ -14,24 +14,12 @@
     border: 1px solid black;
     padding: 0%;
     border-radius: 1rem 1rem 1rem 1rem;
+    border-style: inherit;
+    
+    
     
 
 }
-
-.Formulaire_saisie_ville {
-
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding: 0 1.5rem;
-    box-sizing: content-box;
-    width: 9rem;
-    font-size: 1rem;
-    font-family: "Raleway" Arial, sans-serif;
-    font-weight: bold;
-}
-
 
 .Résultat_de_recherche {
 
@@ -44,7 +32,8 @@
     border: 1px solid #f2f2f2 ;
     background-color: #F2F2F2;
     padding: .8rem;
-    align-self: center;    
+    align-self: center;
+    border-radius: 1rem 0 0 1rem;    
 }
 
 
@@ -60,8 +49,9 @@
 
 
 .Filtre {
+    --taillebordure: 3px;
     display: flex;
-    border: 1px solid #F2F2F2;
+    border: var(--taillebordure) solid #F2F2F2;
     margin: .8rem;
     border-radius: 2rem;
     text-align: center;
@@ -71,6 +61,7 @@
 .Filtre > *{
 
     padding: .8rem;
+    
 }
 
 .Filtre > .Picto {
@@ -79,6 +70,9 @@
     background-color: #DEEBFF;
     border-radius: 100%;
     width: 1.2rem;
+    height: 1.2rem;
+    margin-left: calc(-1*var(--taillebordure));
+    border: var(--taillebordure) solid #DEEBFF;
 }
 
 .Zone_des_filtres {
@@ -86,4 +80,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.Filtre:hover {
+
+    background-color: rgb(127, 178, 255);
+    
 }
