@@ -16,9 +16,9 @@
 .Onglets .Actif a{  /*a revoir pour appliquer en dynamique*/
 
     box-sizing: border-box;
-    color:#0065FC;
+    color: var(--couleur-bleue);
     margin: -1rem 1rem;
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--couleur-bleue);
    
 }
 
@@ -34,12 +34,12 @@
 .Onglets .Important {
 
     font-weight: bold;
-    color: #0065FC;
+    color: var(--couleur-bleue);
 }
 
 .hébergement-global, img {
 
-    width: 9rem;
-    max-height: auto;
     font-style: bold;
+
 }
+

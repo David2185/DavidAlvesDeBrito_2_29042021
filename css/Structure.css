@@ -20,47 +20,35 @@ header{
 
 }
 .hébergements-global {
-
     width:55rem;
-    max-height: auto;
-    border: 2px solid transparent);
-    background-color: var(--couleur-blanc);
-    border-radius: 1rem;
-    
+    border: 2px solid transparent;
+    background-color:var(--couleur-blanc);
+    border-radius: 1rem;    
 }    
-
-.hébergement-à-marseille {
-
-    display: flex;
-    flex-direction: row;
-    
-    
-}
 
 
 .blocs-complets {
     
     display: grid;
     align-self: center;
+    align-content: stretch;
     column-gap: 2rem;
     row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 3rem;
-    max-height: auto;
+    background-color: var(--couleur-blanc);
+    width: 12.9rem;
+    
    
 }
 
-.blocs-complets>.photos-hébergement {
+.blocs-complets>*{
 
-    width: 250px;
-    height: 100px;
-    background-size: 100% 100%;
-    border-radius: 1.125rem 1.125rem 0 0;
+    display: flex;
+    flex-direction: column;
 }
-
 .titre-h2 {
 
     margin: 1rem 0 0 1rem;
@@ -72,9 +60,9 @@ header{
     margin: 0 0 1rem 1rem;
 }
 
-.hébergements-global .blocs-complets{
+.texte-hôtel {
 
-    /* display: flex;
-    justify-content: space-around;
-    align-self: center; */
+display: flex;
+flex-direction: column;
+padding: .3rem;
 }
