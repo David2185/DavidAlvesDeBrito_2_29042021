@@ -2,7 +2,11 @@
 
     font-size: 16px;
     margin: 2rem 2rem;
+    max-width: 1440px;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
+
 
 .Filtres_et_recherche>* {
 
@@ -15,14 +19,62 @@ header{
     justify-content:space-between;
 
 }
+.hébergements-global {
+
+    width:55rem;
+    max-height: auto;
+    border: 2px solid transparent);
+    background-color: var(--couleur-blanc);
+    border-radius: 1rem;
+    
+}    
 
 .hébergement-à-marseille {
 
     display: flex;
-    flex-basis: 65%;
+    flex-direction: row;
+    
+    
 }
 
-.hébergement-à-marseille>* {
 
-    margin: 2rem;
+.blocs-complets {
+    
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 3rem;
+    max-height: auto;
+   
+}
+
+.blocs-complets>.photos-hébergement {
+
+    width: 250px;
+    height: 100px;
+    background-size: 100% 100%;
+    border-radius: 1.125rem 1.125rem 0 0;
+}
+
+.titre-h2 {
+
+    margin: 1rem 0 0 1rem;
+
+}
+
+.plus-de-résultats {
+
+    margin: 0 0 1rem 1rem;
+}
+
+.hébergements-global .blocs-complets{
+
+    /* display: flex;
+    justify-content: space-around;
+    align-self: center; */
 }

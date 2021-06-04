@@ -37,3 +37,9 @@
     color: #0065FC;
 }
 
+.hébergement-global, img {
+
+    width: 9rem;
+    max-height: auto;
+    font-style: bold;
+}

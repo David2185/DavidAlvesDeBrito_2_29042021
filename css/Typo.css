@@ -4,3 +4,16 @@
 
 }
 
+.blocs-résultats {
+
+    font-size: .6rem;
+    font-family: "Raleway", Arial, sans-serif;
+    background-color: var(--couleur-blanc);
+}
+
+.titre-h2 {
+
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+}

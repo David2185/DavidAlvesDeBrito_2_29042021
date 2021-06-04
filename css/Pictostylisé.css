@@ -10,7 +10,19 @@
     text-align: center;
 }
 
+.étoile-pleine {
 
+    color: var(--couleur-bleue);
+}
 
+.étoile-vide {
 
+    color: var(--couleur-gris);
+}
 
+.blocs-complets:hover {
+
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.5s;
+}
