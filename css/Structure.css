@@ -36,7 +36,7 @@ header{
     row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2rem 2rem 2rem;
-    margin-top: 2rem;
+    margin-top: -1.2rem;
     margin-bottom: 2rem;
     background-color: var(--couleur-blanc);
     width: 12.9rem;
@@ -51,13 +51,13 @@ header{
 }
 .titre-h2 {
 
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 0 0 2.3rem;
 
 }
 
 .plus-de-résultats {
 
-    margin: 0 0 1rem 1rem;
+    margin: -2.5rem 0 1rem 2.3rem;
 }
 
 .texte-hôtel {
@@ -65,4 +65,5 @@ header{
 display: flex;
 flex-direction: column;
 padding: .3rem;
+line-height: 1.01rem;
 }
