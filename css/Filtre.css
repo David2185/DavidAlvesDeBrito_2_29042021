@@ -15,10 +15,6 @@
     padding: 0%;
     border-radius: 1rem 1rem 1rem 1rem;
     border-style: inherit;
-    
-    
-    
-
 }
 
 .Résultat_de_recherche {
@@ -45,17 +41,22 @@
     font-weight: bold;
     padding: 0 1.5rem;
     border-radius: 0 .8rem .8rem 0;
+    border: none;
+    cursor: pointer;
 }
 
 
 .Filtre {
     --taillebordure: 3px;
     display: flex;
-    border: var(--taillebordure) solid #F2F2F2;
+    border: var(--taillebordure) solid var(--couleur-blanc);
     margin: .8rem;
     border-radius: 2rem;
     text-align: center;
     background-color: #FFF;
+    align-items: center;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .Filtre > *{
@@ -66,8 +67,8 @@
 
 .Filtre > .Picto {
 
-    color: #0065FC;
-    background-color: #DEEBFF;
+    color: var(--couleur-bleue);
+    background-color: var(--dégradé-bleu);
     border-radius: 100%;
     width: 1.2rem;
     height: 1.2rem;
@@ -80,6 +81,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+input {
+
+    border-left: none;
+    border-right: none;
+    border: 1px solid var(--couleur-blanc);
 }
 
 .Filtre:hover {

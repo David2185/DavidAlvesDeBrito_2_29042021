@@ -29,16 +29,33 @@
 }
 
 .photos-hébergements>* {
-    width: 13rem;
+    width: 16.5rem;
     height: 6rem;
     object-fit: cover;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
-.hébergement-à-Marseille .blocs-résultats{
+.photos-hébergements2>*{
+
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.hébergement-à-Marseille .blocs-résultats,.blocs-résultats2 {
 
     background-color: var(--couleur-du-background-pricipal);
     border: 4px solid var(--couleur-du-background-pricipal);
     border-radius: 1rem;
+}
+
+.blocs-complets2>*:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 0.5s;
+
 }

@@ -18,7 +18,41 @@
     font-weight: bold;
 }
 
+.logo-populaire {
+
+    display:inline-flex;
+    margin-right: 2.5rem;
+    width: 2rem;
+    height: auto;
+}
+
 .plus-de-résultats {
 
     font-weight: bold;
+}
+
+.texte-hôtel {
+
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+    line-height: 1.01rem;
+
+}
+
+.texte-hôtel2 {
+
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    line-height: 1.3rem;
+    font-size: .8rem;
+
+
+}
+
+.nom-hôtels {
+
+    font-size: .8rem;
+    line-height: 1rem;
 }
