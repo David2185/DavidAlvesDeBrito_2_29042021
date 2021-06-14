@@ -15,9 +15,21 @@
     color: var(--couleur-bleue);
 }
 
+.étoile-pleine-pop {
+
+    color: var(--couleur-bleue);
+    margin-top: .8rem;
+}
+
 .étoile-vide {
 
     color: var(--couleur-gris);
+   
+}
+
+.étoile-vide-pop {
+    color: var(--couleur-gris);
+    margin-top: .8rem;
 }
 
 .blocs-complets>*:hover {
@@ -29,7 +41,7 @@
 }
 
 .photos-hébergements>* {
-    width: 16.5rem;
+    width: 16.8rem;
     height: 6rem;
     object-fit: cover;
     border-top-left-radius: 1rem;
@@ -58,4 +70,51 @@
     transform: scale(1.05);
     transition: ease 0.5s;
 
+}
+
+.logo-populaire{
+
+    margin-top: .6rem;
+    margin-right: .6rem;
+    size: 20px;
+    display:inline-flex;
+    width: 2.5rem;
+    height: auto;
+}
+
+
+.photo-activités-simple {
+
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+.photo-activités-double {
+
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+.double-photo:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 0.5s;
+    
+}
+
+.bloc-simple:hover {
+    
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 0.5s;
+     
 }
