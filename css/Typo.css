@@ -55,18 +55,18 @@
     font-size: .8rem;
     font-weight: bold;
     margin-top: .6rem;
-    padding-bottom:.6rem;
-    border: 3px solid var(--couleur-du-background-pricipal);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: royalblue;
+    background-color: transparent;
+    width: 100%;
+    margin-left: .5rem;
 
 }
 
 .titre-activité {
 
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;   
 }
 
 .titre-populaire {

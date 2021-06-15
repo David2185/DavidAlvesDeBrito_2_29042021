@@ -72,13 +72,15 @@ header{
     background-color: var(--couleur-blanc);
     margin-left: 1.5rem;
     border-radius: 1rem;
+    margin-left: 4rem;
     
 }
 
 .blocs-complets2 {
+
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 18srem;
     padding: 2rem;
     margin-top: -2rem;
 
@@ -100,6 +102,8 @@ header{
 .bloc-activité {
     width: 100%;
     display: flex;
+    box-sizing: border-box;
+    border-radius: 1rem;
 }
 
 .bloc-simple .bloc-double{
@@ -107,31 +111,56 @@ header{
     flex-direction: column;
     width: 25%;
     border: 2px solid ;
-    background-color: #fff;
+    background-color: var(--couleur-bleue);
     
 }
 
 .bloc-activité .double-photo {
 
-    width: calc(100% - 20px);
-    height: 250px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 20px;
+    background-color: blue;
+    border-radius: 1rem;
     
 }
 
 .bloc-double {
-
-    margin: 0 2rem 0 2rem;
-    
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem 0 1.5rem;
+    text-align: left;
+    height: 100%;
+      
 }
 
+.photo-activité-simple:first-child {
+    height: 35%;
+}
+.bloc-double:last-child {
+    height: 65%;
+}
 .activité-à-Marseille {
-
-    margin: 2rem auto;
+    display: flex;
+    font-family: "Raleway", Arial, sans-serif;
+    margin: 1rem auto;
+    background-color: var(--couleur-du-background-pricipal);
 }
 
 .bloc-simple {
 
-    border: 3px solid transparent;
-    padding: 0%;
+    border: 2px solid transparent;
     border-radius: 1rem;
 }
+
+.blocs-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.liste-section {
+
+    display: flex;
+    flex-direction: column;
+}
+

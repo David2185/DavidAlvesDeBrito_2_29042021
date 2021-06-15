@@ -25,8 +25,8 @@
 
 #Rechercher .Logo_gps {
 
-    border: 1px solid #f2f2f2 ;
-    background-color: #F2F2F2;
+    border: 1px solid var(--couleur-blanc);
+    background-color:var(--couleur-blanc);
     padding: .8rem;
     align-self: center;
     border-radius: 1rem 0 0 1rem;    
@@ -73,7 +73,7 @@
     width: 1.2rem;
     height: 1.2rem;
     margin-left: calc(-1*var(--taillebordure));
-    border: var(--taillebordure) solid #DEEBFF;
+    border: var(--taillebordure) solid var(--dégradé-bleu);
 }
 
 .Zone_des_filtres {
