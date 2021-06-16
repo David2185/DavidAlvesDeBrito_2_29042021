@@ -66,10 +66,15 @@
 .titre-activité {
 
     margin-top: 4rem;
-    margin-bottom: 2rem;   
+    margin-left: 1.4rem;  
 }
 
 .titre-populaire {
 
     padding-bottom: 0.3rem;
+}
+
+.titre-section {
+
+    margin-bottom: 1rem;
 }

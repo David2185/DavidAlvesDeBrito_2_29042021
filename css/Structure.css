@@ -40,6 +40,7 @@ header{
     margin-top: -1.2rem;
     margin-bottom: 2rem;
     background-color: var(--couleur-blanc);
+    
 
 }
 
@@ -47,6 +48,7 @@ header{
 
     display: flex;
     flex-direction: column;
+    box-shadow: 1px 1px 3px -1px grey;
 }
 .titre-h2 {
 
@@ -90,6 +92,7 @@ header{
 
     display: flex;
     margin: 1rem;
+    box-shadow: 1px 1px 3px -1px grey;
 
 }
 
@@ -101,6 +104,7 @@ header{
 
 .bloc-activité {
     width: 100%;
+    max-height: 500px;
     display: flex;
     box-sizing: border-box;
     border-radius: 1rem;
@@ -120,26 +124,30 @@ header{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     margin: 20px;
-    background-color: blue;
+    background-color:var(--couleur-du-background-pricipal);
     border-radius: 1rem;
-    
+    box-shadow: 1px 1px 3px -1px var(--couleur-gris);
+}
+
+.bloc-activité .bloc-double .double-photo:first-child{
+    height: calc(40% - 40px);
+}
+
+.bloc-activité .bloc-double .double-photo:last-child{
+    height: calc(60% - 40px);
 }
 
 .bloc-double {
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem 0 1.5rem;
-    text-align: left;
-    height: 100%;
-      
+    width: 25%;
+    position: relative;
 }
 
-.photo-activité-simple:first-child {
-    height: 35%;
+.bloc-double-reverse{
+    flex-direction: column-reverse;
 }
-.bloc-double:last-child {
-    height: 65%;
-}
+
 .activité-à-Marseille {
     display: flex;
     font-family: "Raleway", Arial, sans-serif;
@@ -148,19 +156,38 @@ header{
 }
 
 .bloc-simple {
-
     border: 2px solid transparent;
     border-radius: 1rem;
+    width: calc(25% - 40px);
+    margin: 20px;
+    box-shadow: 2px 2px 5px -1px var(--couleur-gris);
 }
 
-.blocs-footer {
+.ensemble-footer {
+
     display: flex;
-    flex-direction: row;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    background-color: var(--couleur-blanc);
 }
 
 .liste-section {
+    list-style: none;
+    text-align: left;
+    margin: .5rem 0;
+    text-decoration: none;
+   
+}
+
+.blocs-footer {
 
     display: flex;
     flex-direction: column;
+    width: 30%;
+    padding: 2rem 2rem;
+    
 }
 
