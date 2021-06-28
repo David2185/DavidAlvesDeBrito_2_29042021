@@ -49,6 +49,7 @@ header{
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 3px -1px grey;
+    transition: ease 0.5s;
 }
 .titre-h2 {
 
@@ -93,6 +94,7 @@ header{
     display: flex;
     margin: 1rem;
     box-shadow: 1px 1px 3px -1px grey;
+    transition: ease 0.5s;
 
 }
 
@@ -127,6 +129,7 @@ header{
     background-color:var(--couleur-du-background-pricipal);
     border-radius: 1rem;
     box-shadow: 1px 1px 3px -1px var(--couleur-gris);
+    transition: ease 0.5s;
 }
 
 .bloc-activité .bloc-double .double-photo:first-child{
@@ -142,6 +145,7 @@ header{
     flex-direction: column;
     width: 25%;
     position: relative;
+    
 }
 
 .bloc-double-reverse{
@@ -161,6 +165,7 @@ header{
     width: calc(25% - 40px);
     margin: 20px;
     box-shadow: 2px 2px 5px -1px var(--couleur-gris);
+    transition: ease 0.5s;
 }
 
 .ensemble-footer {
@@ -171,7 +176,7 @@ header{
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
-    background-color: var(--couleur-blanc);
+    
 }
 
 .liste-section {
@@ -179,6 +184,7 @@ header{
     text-align: left;
     margin: .5rem 0;
     text-decoration: none;
+    color: black;
    
 }
 
@@ -191,3 +197,7 @@ header{
     
 }
 
+footer {
+
+    background-color: var(--couleur-blanc);
+}
