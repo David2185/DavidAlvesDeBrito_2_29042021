@@ -10,6 +10,7 @@
 .Formulaire_saisie_ville {
 
     display: inline-flex;
+    flex-grow: 1;
     flex-direction: row;
     border: 1px solid black;
     padding: 0%;
@@ -96,7 +97,7 @@ input {
 
 .Filtre:hover {
 
-    background-color: rgb(127, 208, 255);
+    background-color: rgb(201, 219, 247);
     cursor: pointer;
     transform: scale(1.05);
     
