@@ -7,8 +7,9 @@
     .header {
 
         display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "";
+        display: grid;
+        grid-template-rows: repeat(2, 100px);
+        order: 1;
     }
 
     .écran-L{
@@ -26,12 +27,19 @@
         align-items: flex-start;
     }
 
+    #Rechercher {
+        width: 100%;        
+    }
+
 
 }
 
 @media all and (max-width:768px){
 
-    
+    .Zone_des_filtres {
+
+        width: 90%;
+    }
 
 
 }
