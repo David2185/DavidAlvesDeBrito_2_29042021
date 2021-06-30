@@ -1,0 +1,39 @@
+.écran-S {
+    display: none;
+}
+
+@media all and (max-width:584px){
+
+    .header {
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 2fr;
+        grid-template-areas: "logo menu3" 
+                             "menu1 menu2";
+    }
+
+    .écran-L{
+
+    display: none;
+    }
+    
+    .écran-S {
+        display: inline;
+    }
+    
+    .Zone_des_filtres{
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+}
+
+@media all and (max-width:768px){
+
+    
+
+
+}
