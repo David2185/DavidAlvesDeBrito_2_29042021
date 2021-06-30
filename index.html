@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Réservations avec Reservia" content="Trouvez votre hébergement pour des vacances de rêve"/>
+    <meta
+      name="Réservations avec Reservia"
+      content="Trouvez votre hébergement pour des vacances de rêve"
+    />
 
     <link rel="stylesheet" type="text/css" href="css/Init.css" />
     <link rel="stylesheet" type="text/css" href="css/Onglets.css" />
@@ -14,42 +17,29 @@
     <link rel="stylesheet" type="text/css" href="css/Typo.css" />
     <link rel="stylesheet" type="text/css" href="css/Variables.css" />
 
-    <link
-      rel="stylesheet" media="screen and (max-width: 1440px)" href="responsive.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
 
     <title>Reservia</title>
-    <script
-      src="https://kit.fontawesome.com/91fd56deac.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/91fd56deac.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
   </head>
-
   <body>
     <div id="wrap">
       <header class="header">
         <a href="">
-          <img
-            src="images/logo/Reservia.svg"
-            id="Logo"
-            alt="Logo reservia"
-            title="Logo Reservia"
-          />
+          <img src="images/logo/Reservia.svg" id="Logo" alt="Logo reservia" title="Logo Reservia" name="logo"/>
         </a>
         <nav class="Onglets">
           <ul>
             <li class="Actif">
-              <a href="hébergement">Hébergements</a>
+              <a href="hébergement" class="menu1">Hébergements</a>
             </li>
             <li>
-              <a href="Activités">Activités</a>
+              <a href="Activités" class="menu2">Activités</a>
             </li>
             <li class="Important">
-              <a href="Moncompte">S'inscrire</a>
+              <a href="Moncompte" class="menu3">S'inscrire</a>
             </li>
           </ul>
         </nav>
@@ -57,28 +47,13 @@
       <main>
         <section class="Filtres_et_recherche">
           <div class="Titres">
-            <h1 id="Titre_principal">
-              Trouvez votre hébergement pour des vacances de rêve
-            </h1>
+            <h1 id="Titre_principal">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="Titre2">En plein centre ville ou en pleine nature</p>
           </div>
-          <form
-            id="Rechercher"
-            class="Formulaire_saisie_ville"
-            action="Traitement.php"
-            method="post"
-          >
-            <div class="Logo_gps">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <input
-              type="search"
-              placeholder="Saisissez votre recherche"
-              id="Ville"
-              name="Ville"
-              value="Marseille, France"
-            />
-            <button>Rechercher</button>
+          <form id="Rechercher" class="Formulaire_saisie_ville" action="Traitement.php" method="post">
+            <div class="Logo_gps"><i class="fas fa-map-marker-alt"></i></div>
+            <input type="search" placeholder="Saisissez votre recherche" id="Ville" name="Ville" value="Marseille, France"/>
+            <button><span class="écran-L">Rechercher</span><span class="écran-S"><i class="fas fa-search"></i></span></button>
           </form>
           <div class="Zone_des_filtres">
             <h2 class="Titre_de_la_zone">Filtres</h2>
