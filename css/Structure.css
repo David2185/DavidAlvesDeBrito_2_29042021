@@ -16,9 +16,34 @@
 }
 
 header{
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo tabs cta";
+    width: 100%;
+    /* align-content: center; */
+    align-items: baseline;
+}   
 
+.Logo {
+    grid-area: logo;
+    
+}
+  
+.Onglets {
+    grid-area: tabs;    
+}
+
+.tab1 {
+    grid-area: tab1;
+}
+
+.tab2 {
+    grid-area: tab2;
+}
+
+.cta {
+    grid-area: cta;
+    
 }
 .hébergements-global {
     width:70%;
