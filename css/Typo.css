@@ -78,3 +78,9 @@ body {
 
     margin-bottom: 1rem;
 }
+
+.cta {
+    color: var(--couleur-bleue);
+    font-weight: bold;
+    text-decoration: none;
+}

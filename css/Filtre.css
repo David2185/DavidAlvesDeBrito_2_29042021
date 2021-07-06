@@ -1,3 +1,6 @@
+.Zone_des_filtres h2{
+    margin-right: 1rem;
+}
 .Titres {
 
     font-size: 1rem;
@@ -7,45 +10,11 @@
     font-weight: bold;
 }
 
-.Formulaire_saisie_ville {
-
-    display: inline-flex;
-    flex-grow: 1;
-    flex-direction: row;
-    border: 1px solid black;
-    padding: 0%;
-    border-radius: 1rem 1rem 1rem 1rem;
-    border-style: inherit;
-}
-
 .Résultat_de_recherche {
 
     display: flex;
     align-items: center;
 }
-
-#Rechercher .Logo_gps {
-
-    border: 1px solid var(--couleur-blanc);
-    background-color:var(--couleur-blanc);
-    padding: .8rem;
-    align-self: center;
-    border-radius: 1rem 0 0 1rem;    
-}
-
-
-#Rechercher>button{
-
-    background-color: var(--couleur-bleue);
-    color: white;
-    font-family: "Raleway" Arial, sans-serif;
-    font-weight: bold;
-    padding: 0 1.5rem;
-    border-radius: 0 .8rem .8rem 0;
-    border: none;
-    cursor: pointer;
-}
-
 
 .Filtre {
     --taillebordure: 3px;
@@ -59,6 +28,7 @@
     font-family: "Raleway", Arial, sans-serif;
     font-weight: bold;
     transition: ease 0.5s;
+    margin-left: 0;
 }
 
 .Filtre > *{
@@ -87,14 +57,6 @@
     
 }
 
-input {
-
-    border-left: none;
-    border-right: none;
-    border: 1px solid var(--couleur-blanc);
-    padding: 0 20px;
-}
-
 .Filtre:hover {
 
     background-color: rgb(201, 219, 247);
@@ -102,5 +64,11 @@ input {
     transform: scale(1.05);
     
     
+}
+
+.groupe-filtres{
+
+    display: flex;
+    flex-wrap: wrap;
 }
 

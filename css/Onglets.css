@@ -1,41 +1,50 @@
-.Onglets>ul {
-
-    display:flex;
-    justify-content: flex-end;
-    list-style: none;
-    align-items: baseline;
-
+.Onglets > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: baseline;
 }
 
 .Onglets li {
-
-    display: block;
-    
-    
+  display: block;
 }
 
-.Onglets .Actif a{  
-    display: inline-block;
-    box-sizing: border-box;
-    color: var(--couleur-bleue);
-    margin: -1rem 1rem;
-    border-top: 2px solid var(--couleur-bleue);
-   
+.Onglets .Actif a {
+  display: inline-block;
+  box-sizing: border-box;
+  color: var(--couleur-bleue);
+  margin: -1rem 1rem;
+  border-top: 2px solid var(--couleur-bleue);
 }
 
 .Onglets a {
-
-    padding: 1.9rem;
-    text-decoration: none;
-    color: inherit;
-    
-
+  padding: 1.9rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .Onglets .Important {
-
-    font-weight: bold;
-    color: var(--couleur-bleue);
+  font-weight: bold;
+  color: var(--couleur-bleue);
 }
 
+.Onglets>ul {
+    grid-area: tabs;
+    display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(1px, auto));
+	justify-content:flex-end;    
+}
 
+@media all and (max-width: 425px) {
+  .Onglets li {
+    border-bottom: 2px solid var(--couleur-blanc);
+  }
+
+  .Onglets .Actif a {
+    border-top: none;
+  }
+
+  .Onglets>ul{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  }
+}

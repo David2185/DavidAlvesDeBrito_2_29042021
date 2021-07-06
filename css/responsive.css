@@ -1,51 +1,40 @@
-.écran-S {
-    display: none;
-}
+@media all and (max-width: 584px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "logo . cta"
+      "tabs tabs tabs";
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+  }
 
-@media all and (max-width:584px){
+  .Logo {
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
 
-    .header {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "logo cta"
-                             "tabs tabs";
-        height: 100%;                         
-    }
+  .cta {
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+  }
 
-    .écran-L{
-
-    display: none;
-    }
-
-    .Onglets li{
-
-        width: 100%;
-    }
+  #Titre_principal {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    text-align: start;
     
-    .écran-S {
-        display: inline;
-    }
-    
-    .Zone_des_filtres{
+  }
 
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .Filtres_et_recherche {
+    align-content: center;
+  }
 
-    #Rechercher {
-        width: 100%;        
-    }
+  .Zone_des_filtres {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+  }
 
-
-}
-
-@media all and (max-width:768px){
-
-    .Zone_des_filtres {
-
-        width: 90%;
-    }
-
-
+  
 }

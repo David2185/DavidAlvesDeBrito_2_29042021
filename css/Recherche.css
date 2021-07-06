@@ -1,0 +1,68 @@
+.Recherche {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 0%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  border-style: inherit;
+}
+.Recherche .Logo_gps {
+  border: 1px solid var(--couleur-blanc);
+  background-color: var(--couleur-blanc);
+  padding: 0.8rem;
+  align-self: center;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.Recherche input {
+  border-left: none;
+  border-right: none;
+  border: 1px solid var(--couleur-blanc);
+  padding: 0 20px;
+}
+
+.Recherche > button {
+  background-color: var(--couleur-bleue);
+  color: white;
+  font-family: "Raleway" Arial, sans-serif;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.écran-S {
+  display: none;
+}
+
+@media all and (max-width: 425px) {
+  .écran-S {
+    display: inline;
+  }
+
+  .écran-L {
+    display: none;
+  }
+
+  .Recherche {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "gps input bouton";
+    text-align: center;
+  }
+
+  .Recherche .gps{
+    grid-area: gps;
+  }
+
+  .Recherche input{
+    grid-area: input;
+  }
+
+  .Recherche button{
+    grid-area:bouton
+  }
+}
