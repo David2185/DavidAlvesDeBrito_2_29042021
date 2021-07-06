@@ -10,69 +10,98 @@
 
     <link rel="stylesheet" type="text/css" href="css/Init.css" />
     <link rel="stylesheet" type="text/css" href="css/Onglets.css" />
+    <link rel="stylesheet" type="text/css" href="css/Recherche.css" />
     <link rel="stylesheet" type="text/css" href="css/Filtre.css" />
     <link rel="stylesheet" type="text/css" href="css/Pictostylisé.css" />
+    
 
     <link rel="stylesheet" type="text/css" href="css/Structure.css" />
     <link rel="stylesheet" type="text/css" href="css/Typo.css" />
     <link rel="stylesheet" type="text/css" href="css/Variables.css" />
 
-    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/91fd56deac.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/91fd56deac.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="header">
+      <a href="#" class="Logo"
+        ><img
+          src="images/logo/Reservia.svg"
+          alt="Logo reservia"
+          title="Logo Reservia"
+      /></a>
+      <nav class="Onglets">
+        <ul>
+          <li class="Actif"><a href="#hébergement">Hébergements</a></li>
+          <li><a href="#activités">Activités</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#">S'inscrire</a>
+    </header>
     <div id="wrap">
-      <header class="header">
-        <a href="#"  class="Logo"><img src="images/logo/Reservia.svg" alt="Logo reservia" title="Logo Reservia"/></a>
-        <nav class="Onglets">
-          <ul>
-            <li class="Actif tab1"><a href="#">Hébergements</a></li>
-            <li class="tab2"><a href="#">Activités</a></li>
-          </ul>
-        </nav>
-        <a class="cta" href="#">S'inscrire</a>
-      </header>
       <main>
         <section class="Filtres_et_recherche">
           <div class="Titres">
-            <h1 id="Titre_principal">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1 id="Titre_principal">
+              Trouvez votre hébergement pour des vacances de rêve
+            </h1>
             <p class="Titre2">En plein centre ville ou en pleine nature</p>
           </div>
-          <form id="Rechercher" class="Formulaire_saisie_ville" action="Traitement.php" method="post">
-            <div class="Logo_gps"><i class="fas fa-map-marker-alt"></i></div>
-            <input type="search" placeholder="Saisissez votre recherche" id="Ville" name="Ville" value="Marseille, France"/>
-            <button><span class="écran-L">Rechercher</span><span class="écran-S"><i class="fas fa-search"></i></span></button>
+          <form
+            class="Recherche"
+            action="Traitement.php"
+            method="post"
+          >
+            <div class="Logo_gps gps"><i class="fas fa-map-marker-alt"></i></div>
+            <input 
+              type="search"
+              placeholder="Saisissez votre recherche"
+              name="Ville"
+              value="Marseille, France"
+            />
+            <button>
+              <span class="écran-L">Rechercher</span
+              ><span class="écran-S"><i class="fas fa-search"></i></span>
+            </button>
           </form>
           <div class="Zone_des_filtres">
             <h2 class="Titre_de_la_zone">Filtres</h2>
-            <button class="Filtre">
-              <div class="Picto">
-                <i class="fas fa-money-bill-wave"></i>
-              </div>
-              <span class="Titre">Économique</span>
-            </button>
-            <button class="Filtre">
-              <div class="Picto">
-                <i class="fas fa-child"></i>
-              </div>
-              <span class="Titre">Familial</span>
-            </button>
-            <button class="Filtre">
-              <div class="Picto">
-                <i class="fas fa-heart"></i>
-              </div>
-              <span class="Titre">Romantique</span>
-            </button>
-            <button class="Filtre">
-              <div class="Picto">
-                <i class="fas fa-dog"></i>
-              </div>
-              <span class="Titre">Animaux autorisés</span>
-            </button>
+            <div class="groupe-filtres">
+              <button class="Filtre">
+                <div class="Picto">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <span class="Titre">Économique</span>
+              </button>
+              <button class="Filtre">
+                <div class="Picto">
+                  <i class="fas fa-child"></i>
+                </div>
+                <span class="Titre">Familial</span>
+              </button>
+              <button class="Filtre">
+                <div class="Picto">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <span class="Titre">Romantique</span>
+              </button>
+              <button class="Filtre">
+                <div class="Picto">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <span class="Titre">Animaux autorisés</span>
+              </button>
+            </div>
           </div>
           <p class="Résultat_de_recherche">
             <i class="Pictostylisé fas fa-info"></i>Plus de 500 logements sont
@@ -81,7 +110,7 @@
         </section>
         <!--début de la partie 2-->
         <div class="zone-hébergements">
-          <section class="hébergements-global">
+          <section class="hébergements-global" id="hébergement">
             <div class="hébergement-à-Marseille">
               <header class="titre-h2">
                 <h2>Hébergements à Marseille</h2>
@@ -91,7 +120,7 @@
                   <div class="photos-hébergements">
                     <img
                       src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                      alt=""
+                      alt="#"
                     />
                   </div>
                   <div class="texte-hôtel">
@@ -282,7 +311,7 @@
             </div>
           </aside>
         </div>
-        <section class="activités-à-Marseille">
+        <section class="activités-à-Marseille" id="activités">
           <h2 class="titre-activité">Activités à Marseille</h2>
           <div class="bloc-activité">
             <div class="bloc-simple">
