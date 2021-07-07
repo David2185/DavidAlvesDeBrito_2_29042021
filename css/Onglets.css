@@ -1,5 +1,4 @@
 .Onglets > ul {
-  display: flex;
   justify-content: flex-end;
   list-style: none;
   align-items: baseline;
@@ -10,14 +9,14 @@
 }
 
 .Onglets .Actif a {
-  display: inline-block;
+  
   box-sizing: border-box;
   color: var(--couleur-bleue);
-  margin: -1rem 1rem;
   border-top: 2px solid var(--couleur-bleue);
 }
 
 .Onglets a {
+  display: inline-block;
   padding: 1.9rem;
   text-decoration: none;
   color: inherit;
@@ -28,14 +27,13 @@
   color: var(--couleur-bleue);
 }
 
-.Onglets>ul {
-    grid-area: tabs;
-    display:grid;
-	grid-template-columns: repeat(auto-fit, minmax(1px, auto));
-	justify-content:flex-end;    
+.Onglets > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, auto));
+  justify-content: flex-end;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 584px) {
   .Onglets li {
     border-bottom: 2px solid var(--couleur-blanc);
   }
@@ -44,7 +42,11 @@
     border-top: none;
   }
 
-  .Onglets>ul{
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  .Onglets > ul {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .Onglets .Actif{
+    border-color: var(--couleur-bleue);
   }
 }

@@ -37,6 +37,10 @@
     
 }
 
+.Onglets{
+    grid-area: tabs;
+}
+
 .cta {
     grid-area: cta;
     
