@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/Recherche.css" />
     <link rel="stylesheet" type="text/css" href="css/Filtre.css" />
     <link rel="stylesheet" type="text/css" href="css/Pictostylisé.css" />
-    
+    <link rel="stylesheet" type="text/css" href="css/Activité.css" />
+    <link rel="stylesheet" type="text/css" href="css/Resultats.css" />
 
     <link rel="stylesheet" type="text/css" href="css/Structure.css" />
     <link rel="stylesheet" type="text/css" href="css/Typo.css" />
@@ -57,13 +58,11 @@
             </h1>
             <p class="Titre2">En plein centre ville ou en pleine nature</p>
           </div>
-          <form
-            class="Recherche"
-            action="Traitement.php"
-            method="post"
-          >
-            <div class="Logo_gps gps"><i class="fas fa-map-marker-alt"></i></div>
-            <input 
+          <form class="Recherche" action="Traitement.php" method="post">
+            <div class="Logo_gps gps">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input
               type="search"
               placeholder="Saisissez votre recherche"
               name="Ville"
@@ -235,7 +234,7 @@
             </div>
           </section>
           <!--début bloc aside-->
-          <aside>
+          <article>
             <div class="hébergement-les-plus-populaires">
               <header class="titre-h2">
                 <h2 class="titre-populaire">Les plus populaires</h2>
@@ -309,11 +308,64 @@
                 </div>
               </div>
             </div>
-          </aside>
+          </article>
         </div>
         <section class="activités-à-Marseille" id="activités">
           <h2 class="titre-activité">Activités à Marseille</h2>
           <div class="bloc-activité">
+            <article class="portrait">
+              <img
+                class="photo-activités-simple"
+                src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Vieux port"
+              />
+              <p class="lieux-activités">Vieux port</p>
+            </article>
+
+            <article class="deuxtiers">
+              <img
+                class="photo-activités-double"
+                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Fort de Pomègues"
+              />
+              <p class="lieux-activités">Fort de Pomègues</p>
+            </article>
+            <article class="untiers">
+              <img
+                class="photo-activités-double"
+                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Îles du Frioul"
+              />
+              <p class="lieux-activités">Îles du Frioul</p>
+            </article>
+
+            <article class="portrait">
+              <img
+                class="photo-activités-simple"
+                src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc National des Calanques"
+              />
+              <p class="lieux-activités">Parc National des Calanques</p>
+            </article>
+            
+            <article>
+              <img
+                class="photo-activités-double"
+                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde"
+              />
+              <p class="lieux-activités">Notre-Dame-de-la-Garde</p>
+            </article>
+            <article>
+              <img
+                class="photo-activités-double"
+                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Longchamp"
+              />
+              <p class="lieux-activités">Parc Longchamp</p>
+            </article>
+          </div>
+          <!-- <div class="bloc-activité">
             <div class="bloc-simple">
               <img
                 class="photo-activités-simple"
@@ -366,7 +418,7 @@
                 <p class="lieux-activités">Notre-Dame-de-la-Garde</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
       </main>
     </div>
