@@ -60,7 +60,7 @@
     align-content: stretch;
     column-gap: 2rem;
     row-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     padding: 2rem 2rem 2rem 2rem;
     margin-top: -1.2rem;
     margin-bottom: 2rem;
@@ -131,21 +131,12 @@
     flex-direction: row;
 }
 
-.bloc-activité {
+/* .bloc-activité {
     width: 100%;
     max-height: 500px;
     display: flex;
     box-sizing: border-box;
     border-radius: 1rem;
-}
-
-.bloc-simple .bloc-double{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    border: 2px solid ;
-    background-color: var(--couleur-bleue);
-    
 }
 
 .bloc-activité .double-photo {
@@ -177,7 +168,16 @@
 
 .bloc-double-reverse{
     flex-direction: column-reverse;
-}
+} */
+
+/* .bloc-simple {
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    width: calc(25% - 40px);
+    margin: 20px;
+    box-shadow: 2px 2px 5px -1px var(--couleur-gris);
+    transition: ease 0.5s;
+} */
 
 .activité-à-Marseille {
     display: flex;
@@ -186,14 +186,7 @@
     background-color: var(--couleur-du-background-pricipal);
 }
 
-.bloc-simple {
-    border: 2px solid transparent;
-    border-radius: 1rem;
-    width: calc(25% - 40px);
-    margin: 20px;
-    box-shadow: 2px 2px 5px -1px var(--couleur-gris);
-    transition: ease 0.5s;
-}
+
 
 .ensemble-footer {
 
@@ -203,6 +196,7 @@
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
+    flex-wrap: wrap;
     
 }
 
@@ -219,7 +213,7 @@
 
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     padding: 2rem 2rem;
     
 }
@@ -233,3 +227,4 @@ footer {
     display: flex;
     flex-direction: column;
 }
+

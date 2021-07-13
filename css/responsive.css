@@ -36,5 +36,8 @@
     flex-direction: column;
   }
 
+  .zone-hébergements{
+    flex-direction: column-reverse;
+  }
   
 }
