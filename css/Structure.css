@@ -1,230 +1,46 @@
 #wrap {
+  font-size: 16px;
+  max-width: 1440px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
 
-    font-size: 16px;
-    margin: 2rem auto;
-    max-width: 1440px;
+.Filtres_et_recherche > * {
+  margin: 1rem 0;
+}
+
+@media all and (max-width: 584px) {
+  #wrap {
+    padding: 0;
+  }
+
+  .Filtres_et_recherche,
+  #activités {
     padding: 0 2rem;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-
-.Filtres_et_recherche>* {
-
-    margin: 1rem 0;
-
-}
-
-.header{
+  }
+  #hébergement-ville {
+    background-color: transparent !important;
+  }
+  #Titre_principal {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    text-align: start;
     
-    display: grid;
-	grid-template-columns: auto 1fr auto;
-	grid-template-areas:"logo tabs cta";
-	grid-gap: 1.25rem;
-	height:100px;
-    align-items: center;
-    font-size: 16px;
-    margin: 2rem auto;
-    max-width: 1440px;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    width: 100%;
-    font-family: "raleway",Arial, sans-serif;
-}   
+  }
 
-.Logo {
-    grid-area: logo;
-    
-}
+  .Filtres_et_recherche {
+    align-content: center;
+  }
 
-.Onglets{
-    grid-area: tabs;
-}
-
-.cta {
-    grid-area: cta;
-    
-}
-.hébergements-global {
-    width:70%;
-    border: 2px solid transparent;
-    background-color:var(--couleur-blanc);
-    border-radius: 1rem;    
-}    
-
-
-.blocs-complets {
-    
-    display: grid;
-    align-self: center;
-    align-content: stretch;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-    padding: 2rem 2rem 2rem 2rem;
-    margin-top: -1.2rem;
-    margin-bottom: 2rem;
-    background-color: var(--couleur-blanc);
-    
-
-}
-
-.blocs-complets>*{
-
+  .Zone_des_filtres {
+    align-items: baseline;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 3px -1px grey;
-    transition: ease 0.5s;
-}
-.titre-h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem 0 0 2.3rem;
+  }
 
-}
-
-.plus-de-résultats {
-
-    margin: -2.5rem 0 1rem 2.3rem;
-}
-
-
-.zone-hébergements {
-
-    display: flex;   
-}
-
-.hébergement-les-plus-populaires {
-
-    display: flex;
-    flex-direction: column;
-    background-color: var(--couleur-blanc);
-    margin-left: 1.5rem;
-    border-radius: 1rem;
-    margin-left: 4rem;
-    
-}
-
-.blocs-complets2 {
-
-    display: flex;
-    flex-direction: column;
-    width: 18srem;
-    padding: 2rem;
-    margin-top: -2rem;
-
-}
-
-.blocs-complets2>* {
-
-    display: flex;
-    margin: 1rem;
-    box-shadow: 1px 1px 3px -1px grey;
-    transition: ease 0.5s;
-
-}
-
-.blocs-évaluation {
-
-    display: flex;
-    flex-direction: row;
-}
-
-/* .bloc-activité {
-    width: 100%;
-    max-height: 500px;
-    display: flex;
-    box-sizing: border-box;
-    border-radius: 1rem;
-}
-
-.bloc-activité .double-photo {
-
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    margin: 20px;
-    background-color:var(--couleur-du-background-pricipal);
-    border-radius: 1rem;
-    box-shadow: 1px 1px 3px -1px var(--couleur-gris);
-    transition: ease 0.5s;
-}
-
-.bloc-activité .bloc-double .double-photo:first-child{
-    height: calc(40% - 40px);
-}
-
-.bloc-activité .bloc-double .double-photo:last-child{
-    height: calc(60% - 40px);
-}
-
-.bloc-double {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    position: relative;
-    
-}
-
-.bloc-double-reverse{
+  .zone-hébergements{
     flex-direction: column-reverse;
-} */
-
-/* .bloc-simple {
-    border: 2px solid transparent;
-    border-radius: 1rem;
-    width: calc(25% - 40px);
-    margin: 20px;
-    box-shadow: 2px 2px 5px -1px var(--couleur-gris);
-    transition: ease 0.5s;
-} */
-
-.activité-à-Marseille {
-    display: flex;
-    font-family: "Raleway", Arial, sans-serif;
-    margin: 1rem auto;
-    background-color: var(--couleur-du-background-pricipal);
+  }
+  
 }
-
-
-
-.ensemble-footer {
-
-    display: flex;
-    max-width: 100%;
-    width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    
-}
-
-.liste-section {
-    list-style: none;
-    text-align: left;
-    margin: .5rem 0;
-    text-decoration: none;
-    color: black;
-   
-}
-
-.blocs-footer {
-
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding: 2rem 2rem;
-    
-}
-
-footer {
-
-    background-color: var(--couleur-blanc);
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-}
-

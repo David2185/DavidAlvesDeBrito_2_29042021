@@ -1,0 +1,51 @@
+.résultats article {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "footer";
+    font-size: .8rem;
+}
+
+.résultats article > img {
+  grid-area: image;
+}
+
+.résultats article > div {
+  grid-area: footer;
+
+  display: grid;
+  grid-template-areas:
+    "titre"
+    "prix"
+    "."
+    "étoile";
+    padding: 0 .7rem;
+}
+
+.résultats article > div > h3 {
+  grid-area: titre;
+}
+
+.résultats article > div > p {
+  grid-area: prix;
+}
+
+.résultats article > div > .étoiles {
+  grid-area: étoile;
+}
+
+.hébergement-les-plus-populaires .résultats article {
+  grid-template-areas: "image footer";
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+}
+
+.zone-hébergements .résultats article{
+  background-color:var(--couleur-du-background-pricipal);
+  border-radius: 1rem;
+  row-gap: .2rem;
+}
+
+.zone-hébergements .résultats article{
+  padding: .2rem;
+}

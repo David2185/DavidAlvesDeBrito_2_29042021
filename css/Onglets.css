@@ -9,17 +9,14 @@
 }
 
 .Onglets .Actif a {
-  
-  box-sizing: border-box;
   color: var(--couleur-bleue);
   border-top: 2px solid var(--couleur-bleue);
 }
 
 .Onglets a {
   display: inline-block;
-  padding: 1.9rem;
+  padding: 2.5rem;
   text-decoration: none;
-  color: inherit;
 }
 
 .Onglets .Important {
@@ -46,7 +43,7 @@
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 
-  .Onglets .Actif{
+  .Onglets .Actif {
     border-color: var(--couleur-bleue);
   }
 }

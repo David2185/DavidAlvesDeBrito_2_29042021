@@ -1,5 +1,5 @@
 @media all and (max-width: 584px) {
-  .header {
+  /* .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "logo . cta"
@@ -7,6 +7,7 @@
     font-weight: 500;
     text-align: center;
     padding: 0;
+    margin-bottom: 3rem;
   }
 
   .Logo {
@@ -17,8 +18,8 @@
   .cta {
     padding-bottom: 1rem;
     margin-right: 2rem;
-  }
-
+  } */
+/* 
   #Titre_principal {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
@@ -38,6 +39,6 @@
 
   .zone-hébergements{
     flex-direction: column-reverse;
-  }
+  } */
   
 }

@@ -37,7 +37,7 @@
   display: none;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 584px) {
   .écran-S {
     display: inline;
   }

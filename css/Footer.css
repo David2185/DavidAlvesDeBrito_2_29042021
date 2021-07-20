@@ -1,0 +1,121 @@
+/* #wrap+footer {
+  display: grid;
+  grid-template-areas:
+    "bloc1"
+    "bloc2"
+    "bloc3";
+  list-style: none;
+  text-decoration: none;
+  background-color: var(--couleur-blanc);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 2rem;
+}
+
+.bloc1 {
+  grid-area: bloc1;
+}
+
+.bloc2 {
+  grid-area: bloc2;
+}
+
+.bloc3 {
+  grid-area: bloc3;
+}
+
+.liste-section {
+  list-style: none;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-area: "liste" "liste" "liste";
+  padding: 0.3rem;
+}
+
+.liste-section {
+  grid-area: liste;
+} */
+
+/* @media all and (min-width: 1230px) {
+  footer {
+    grid-auto-flow: column;
+  }
+} */
+/* .ensemble-footer {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  .liste-section {
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blocs-footer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 2rem 2rem;
+  }
+  
+  footer {
+    background-color: var(--couleur-blanc);
+  }
+   */
+
+   .footer {
+    width: 100%;
+    background: var(--couleur-blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blocs-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+  }
+  
+  .bloc-footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bloc-footer > * {
+    margin-bottom: 1rem;
+  }
+  
+  .titre-footer {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .liens-footer:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+  
+  .bloc-assistance {
+    margin-right: 20%;
+  }
+
+  @media screen and (max-width: 584px) {
+    .blocs-footer {
+      display: inline-flex;
+      flex-direction: column;
+    }
+    .blocs-footer .bloc-footer {
+      padding: 10px 20px;
+    }
+  }

@@ -1,74 +1,67 @@
-.Zone_des_filtres h2{
-    margin-right: 1rem;
+.Zone_des_filtres h2 {
+  margin-right: 1rem;
 }
 .Titres {
-
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 #Titre_principal {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .Résultat_de_recherche {
-
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Filtre {
-    --taillebordure: 3px;
-    display: flex;
-    border: var(--taillebordure) solid var(--couleur-blanc);
-    margin: .8rem;
-    border-radius: 2rem;
-    text-align: center;
-    background-color: #FFF;
-    align-items: center;
-    font-family: "Raleway", Arial, sans-serif;
-    font-weight: bold;
-    transition: ease 0.5s;
-    margin-left: 0;
+  --taillebordure: 3px;
+  display: flex;
+  border: var(--taillebordure) solid var(--couleur-blanc);
+  margin: 0.8rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #fff;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: bold;
+  transition: ease 0.5s;
+  margin-left: 0;
 }
 
-.Filtre > *{
-
-    padding: .8rem;
-    
+.Filtre > * {
+  padding: 0.8rem;
 }
 
 .Filtre > .Picto {
-
-    color: var(--couleur-bleue);
-    background-color: var(--dégradé-bleu);
-    border-radius: 100%;
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-left: calc(-1*var(--taillebordure));
-    border: var(--taillebordure) solid var(--dégradé-bleu);
+  display: flex;
+  color: var(--couleur-bleue);
+  background-color: var(--dégradé-bleu);
+  border-radius: 100%;
+  border: var(--taillebordure) solid var(--dégradé-bleu);
+  margin: -2px;
 }
 
 .Zone_des_filtres {
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Filtre:hover {
-
-    background-color: rgb(201, 219, 247);
-    cursor: pointer;
-    transform: scale(1.05);
-    
-    
+  background-color: rgb(201, 219, 247);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
-.groupe-filtres{
-
-    display: flex;
-    flex-wrap: wrap;
+.groupe-filtres {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+@media all and (max-width:584px){
+  .Zone_des_filtres{
+    align-items:flex-start;
+  }
+}

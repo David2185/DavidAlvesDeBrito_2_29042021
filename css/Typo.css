@@ -1,87 +1,56 @@
 body {
-
-    font-family: "Raleway", "Open sans", serif;
-
-}
-
-.blocs-résultats {
-
-    font-size: .6rem;
-    font-family: "Raleway", Arial, sans-serif;
-    background-color: var(--couleur-blanc);
+  font-family: "Raleway", "Open sans", serif;
 }
 
 .titre-h2 {
-
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: .9rem;
-    font-weight: bold;
-    align-items: baseline;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  /* font-size: 1rem;
+  font-weight: bold;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
 }
-
 
 .plus-de-résultats {
-
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.texte-hôtel {
-
-    display: flex;
-    flex-direction: column;
-    padding: .3rem;
-    line-height: 1.01rem;
-
-}
-
-.texte-hôtel2 {
-
-    display: flex;
-    flex-direction: column;
-    padding: .5rem;
-    line-height: 1.3rem;
-    font-size: .8rem;
-
-
+.résultats + * {
+  margin-top: 1rem;
 }
 
 .nom-hôtels {
-
-    font-size: .8rem;
-    line-height: 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 .lieux-activités {
-
-    font-size: .8rem;
-    font-weight: bold;
-    margin-top: .6rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: transparent;
-    width: 100%;
-    margin-left: .5rem;
-
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: transparent;
+  margin-left: 0.5rem;
 }
 
 .titre-activité {
-
-    margin-top: 4rem;
-    margin-left: 1.4rem;  
+  margin-top: 4rem;
+  margin-left: 1.4rem;
 }
 
 .titre-populaire {
-
-    padding-bottom: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .titre-section {
-
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cta {
-    color: var(--couleur-bleue);
-    font-weight: bold;
-    text-decoration: none;
+  color: var(--couleur-bleue);
+  font-weight: bold;
+  text-decoration: none;
 }

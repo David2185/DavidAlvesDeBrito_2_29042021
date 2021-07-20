@@ -1,0 +1,84 @@
+.zone-hébergements {
+  display: grid;
+  grid-template-areas:
+    "populaire"
+    "hebergement";
+  column-gap: 4rem;
+}
+
+.hébergement-les-plus-populaires {
+  grid-area: populaire;
+  
+}
+
+.hébergements-global {
+  grid-area: hebergement;
+}
+
+#hébergement-ville, .hébergement-les-plus-populaires{
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--couleur-blanc);
+  border-radius: 1rem;
+}
+
+ .résultats {
+  display: grid;
+  align-self: center;
+  align-content: stretch;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.photos-hébergements {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.photos-hébergements2 {
+  width: 6rem;
+  height: 7rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.zone-hébergements .hébergement-les-plus-populaires h2::after {
+  content: "\f201";
+  font-family: "Font Awesome 5 Free";
+  float: right;
+}
+.étoile-pleine {
+  color: var(--couleur-bleue);
+}
+
+.étoile-pleine-pop {
+  color: var(--couleur-bleue);
+  margin-top: 0.8rem;
+}
+
+.étoile-vide {
+  color: var(--couleur-gris);
+}
+
+.étoile-vide-pop {
+  color: var(--couleur-gris);
+  margin-top: 0.8rem;
+}
+
+@media all and (min-width: 1230px) {
+  .zone-hébergements {
+    grid-template-areas: "hebergement populaire";
+    grid-template-columns: 1fr auto;
+  }
+
+}
+
+@media all and (max-width:768px){
+  .zone-hébergements{
+    gap:2rem;
+  }
+}
