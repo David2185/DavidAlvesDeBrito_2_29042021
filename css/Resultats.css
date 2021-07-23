@@ -12,14 +12,15 @@
 
 .résultats article > div {
   grid-area: footer;
-
   display: grid;
   grid-template-areas:
     "titre"
     "prix"
     "."
     "étoile";
+    grid-template-rows: auto auto 1fr auto;
     padding: 0 .7rem;
+    line-height: 1.5;
 }
 
 .résultats article > div > h3 {

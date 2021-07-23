@@ -40,6 +40,10 @@
   border-radius: 100%;
   border: var(--taillebordure) solid var(--dégradé-bleu);
   margin: -2px;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .Zone_des_filtres {

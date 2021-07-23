@@ -4,7 +4,7 @@
   padding: 0 2rem;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 
 .Filtres_et_recherche > * {
@@ -48,6 +48,14 @@
 }
 
 @media all and (max-width: 768px){
+  #wrap{
+    margin: 0;
+  }
+}
+
+
+
+@media all and (max-width: 1440px){
   #wrap{
     margin: 0;
   }
