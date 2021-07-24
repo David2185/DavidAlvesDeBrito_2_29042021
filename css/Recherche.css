@@ -67,7 +67,7 @@
   }
 }
 
-@media all and (max-width: 350px){
+@media all and (max-width: 374px){
   .Recherche input{
     padding:0;
   }
